@@ -1,0 +1,54 @@
+.faq {
+  max-width: 600px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the FAQ section */
+  font-family: Arial, sans-serif; /* Font family */
+  text-align: center; /* Center align text */
+  margin-top: 10%; /* Space from top */
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 32px; /* Adjusted font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.faq-list {
+  margin-top: 20px; /* Space above the FAQ list */
+}
+
+.faq-item {
+  border-bottom: 1px solid #cccccc; /* Divider line */
+  padding: 10px 0; /* Padding around items */
+}
+
+.faq-question {
+  display: flex; /* Flex layout for questions */
+  justify-content: space-between; /* Space between question and answer */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.faq-answer {
+  padding-top: 10px; /* Space above the answer */
+  font-size: 14px; /* Font size for answers */
+  color: #666; /* Answer text color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .faq {
+      padding: 0 15px; /* Add horizontal padding for mobile */
+  }
+
+  .faq h2 {
+      font-size: 28px; /* Smaller font size for headings on mobile */
+  }
+
+  .faq-item {
+      padding: 15px 0; /* Increase vertical padding for items on mobile */
+  }
+
+  .faq-answer {
+      font-size: 12px; /* Decrease font size for answers on mobile */
+      padding: 5px 0; /* Adjust padding for answers */
+  }
+}

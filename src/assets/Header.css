@@ -1,0 +1,147 @@
+ 
+* {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar-logo b {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.ui {
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+   
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+}
+
+.navbar-menu li:hover .dropdown {
+  display: block;
+}
+
+ 
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ 
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  margin: 80px auto 0; 
+  max-width: fit-content;  
+  background-color: #e5bcff;
+  padding: 3px;
+  border-radius: 50px;
+}
+
+.new-feature-btn {
+  border: 1px solid #d1c4e9;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background-color: #ffffff;
+  color: #6a1b9a;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.dashboard-links{
+  color: #6a1b9a;
+  margin-right: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ 
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+ 
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .navbar-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s;
+  }
+
+  
+  .profile-picture {
+    display: none;
+  }
+
+ 
+  .navbar-actions {
+    display: none;
+  }
+}

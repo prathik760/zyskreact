@@ -1,0 +1,80 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.person-btn {
+    background: #7F56D9;
+    color: white;
+    padding: 10px 15px; /* Added horizontal padding */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.people-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F9FAFB;
+    margin-top: 20px;
+     /* Limit the width for larger screens */
+    width: 100%; /* Make it responsive */
+    padding: 0 20px; /* Add horizontal padding */
+    overflow-x: auto; /* Allow horizontal scrolling if content is too wide */
+     
+}
+
+.people-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.person-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.person-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #F9FAFB;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .people-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        padding: 5px; /* Reduce padding */
+        
+    }
+
+    .people-card {
+        flex-direction: column; /* Stack contents vertically */
+        margin-bottom: 20px; /* Space between cards */
+        width: 80%; /* Make cards take full width */
+        
+    }
+
+    .person-name {
+        font-size: 20px; /* Decrease font size for names */
+    }
+
+    .person-title {
+        font-size: 14px; /* Decrease font size for titles */
+    }
+    
+    .person-btn {
+        padding: 8px 12px; /* Adjust padding for the button */
+    }
+}

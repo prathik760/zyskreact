@@ -1,0 +1,28 @@
+.new-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.new-image {
+    padding: 5px;  
+    border-radius: 5px; 
+    width: 100%; /* Set width to 100% to fill the container */
+    max-width: 1216px; /* Optional: Max width to maintain size on larger screens */
+}
+
+.new-img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.link {
+    color: #6941C6;
+    cursor: pointer;
+}
+
+.features-grid {
+    border-bottom: 0.5px solid #dcdbdb;
+    padding: 50px;
+}
